@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artistry Studio - Splash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f5f7; /* Apple-style background */
+      color: #1d1d1f;
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      animation: fadeIn 1s ease-in-out;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin-bottom: 16px;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .underline {
+      font-size: 16px;
+      color: #6e6e73;
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      padding-bottom: 6px;
+    }
+
+    .underline::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #0071e3, #34c759); /* Blue to green Apple-style gradient */
+      display: block;
+      margin-top: 6px;
+      animation: slideIn 2s ease-out;
+      border-radius: 2px;
+    }
+
+    @keyframes slideIn {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+      .underline {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 5000); // Redirect after 5 seconds
+  </script>
+</head>
+<body>
+  <h1>Artistry Studio</h1>
+  <div class="underline">Made with ❤️ by Bidhan7415</div>
+</body>
+</html>
